@@ -1,0 +1,3 @@
+[submodule "student-crud-backend"]
+	path = student-crud-backend
+	url = https://github.com/FatmaElzahraaAhmed/UltatelTask-Backend

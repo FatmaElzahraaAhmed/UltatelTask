@@ -1,3 +1,6 @@
 [submodule "student-crud-backend"]
 	path = student-crud-backend
 	url = https://github.com/FatmaElzahraaAhmed/UltatelTask-Backend
+[submodule "student-crud-app"]
+	path = student-crud-app
+	url = https://github.com/FatmaElzahraaAhmed/UltatelTask-Frontend

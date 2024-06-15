@@ -129,6 +129,10 @@ Ensure that your MySQL server is running and you have created a database (`ultat
 
 Swagger is integrated for API documentation and can be accessed at [Swagger Documentation](https://ultateltask-backend-production.up.railway.app/swagger) when the backend server is running.
 
+## Postman Collection
+
+A Postman collection for testing the API endpoints is available in the repository. You can import this collection to Postman and start testing your API endpoints.
+
 ## Contributing
 
 1. Fork the repository.

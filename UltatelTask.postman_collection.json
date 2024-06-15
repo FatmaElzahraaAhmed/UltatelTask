@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "3dc074f4-8e85-48e0-a38e-cfb2323dda48",
+		"name": "UltatelTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17761931"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "GetAllStudents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIxLCJpYXQiOjE3MTg0MDE1NTcsImV4cCI6MTcxOTAwNjM1N30.Ga5qVpVQK4S8GynO3ISZGfTs5fba1riWm0Wfxh8iOak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/student",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxODIyMDMwNiwiZXhwIjoxNzE4MjIzOTA2fQ.LpP7AOFFeUXMm_b88NqaeFStOb6D-220WTQTW9pt67E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/student/1",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIxLCJpYXQiOjE3MTgzNzYyNzIsImV4cCI6MTcxODk4MTA3Mn0.OG5Fq0eZZECXAwotobgzQ05L_jHtEaSvtNy9gpvQciM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Fatima\",\r\n    \"email\": \"fdwfreferf123@example.com\",\r\n    \"gender\": \"Male\",\r\n    \"country\": \"Pakistan\",\r\n    \"dateOfBirth\": \"2000-02-20\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/student",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIxLCJpYXQiOjE3MTg0MDE1NTcsImV4cCI6MTcxOTAwNjM1N30.Ga5qVpVQK4S8GynO3ISZGfTs5fba1riWm0Wfxh8iOak",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Fatma\",\r\n    \"email\": \"fatmaahmednvhgfujikd2272001@gmail.com\",\r\n    \"gender\": \"Female\",\r\n    \"country\": \"Egypt\",\r\n    \"dateOfBirth\": \"2009-06-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/student/6",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"student",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxODIyMDMwNiwiZXhwIjoxNzE4MjIzOTA2fQ.LpP7AOFFeUXMm_b88NqaeFStOb6D-220WTQTW9pt67E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/student/1",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"fatmaahmed222e001@gmail.com\",\r\n  \"password\": \"Stitch@2207\",\r\n  \"name\": \"John Doe\",\r\n  \"confirmPassword\":\"Stitch@2207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/user/register",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"fatmaahmed2272001@gmail.com\",\r\n  \"password\": \"Stitch@2207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/user/login",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResendEmailConfirmation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fatmaahmed2272001@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/user/resend-confirmation-email",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"resend-confirmation-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ultateltask-backend-production.up.railway.app/user/confirm-email/3Dc43d1f9d-de21-4d63-8ebf-8620400bfbc2",
+							"protocol": "https",
+							"host": [
+								"ultateltask-backend-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"confirm-email",
+								"3Dc43d1f9d-de21-4d63-8ebf-8620400bfbc2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
